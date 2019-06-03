@@ -33,7 +33,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
 }
 
-.header-div {
+.header__text-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,7 +44,7 @@ body {
   backface-visibility: hidden;
 }
 
-.header-main {
+.header__text--main {
   display: block;
   font-size: 5rem;
   font-weight: 400;
@@ -54,7 +54,7 @@ body {
   animation-timing-function: ease;
 }
 
-.header-secondary {
+.header__text--secondary {
   display: block;
   font-size: 2rem;
   font-weight: 30rem;
@@ -89,7 +89,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
 }
 
@@ -106,7 +106,7 @@ body {
   transition: all 1s;
 }
 
-.btn-white::after {
+.btn--white::after {
   content: "";
   background-color: rgba(255, 255, 255, 0.15);
 }
@@ -116,7 +116,7 @@ body {
   opacity: 0;
 }
 
-.btn-fade-in {
+.btn--fade-in {
   animation: fadeIn 2s 2s;
   animation-fill-mode: backwards;
 }
