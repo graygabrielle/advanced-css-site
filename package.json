@@ -4,7 +4,7 @@
   "description": "this site in an exercise in advanced css, and sass techniques",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss assets/css/style.css"
+    "compile:sass": "node-sass sass/main.scss assets/css/style.css --watch"
   },
   "repository": {
     "type": "git",
