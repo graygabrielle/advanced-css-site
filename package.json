@@ -1,0 +1,22 @@
+{
+  "name": "advanced-css-site",
+  "version": "1.0.0",
+  "description": "this site in an exercise in advanced css, and sass techniques",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graygabrielle/advanced-css-site.git"
+  },
+  "author": "Gray Atkinson-Adams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/graygabrielle/advanced-css-site/issues"
+  },
+  "homepage": "https://github.com/graygabrielle/advanced-css-site#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
