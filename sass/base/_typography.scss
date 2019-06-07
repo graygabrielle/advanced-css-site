@@ -2,26 +2,45 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
+  color: $color-shadow;
+}
+
+[class^="header-text"] {
+  display: block;
+  animation-duration: 2s;
+  animation-timing-function: ease;
   color: $color-light;
 }
 
-.header-text--main {
-  display: block;
-  font-size: 5rem;
-  font-weight: 400;
-  letter-spacing: 2.3rem;
-  animation-name: moveInRight;
-  animation-duration: 2s;
-  animation-timing-function: ease;
+.header-text {
+  &--main {
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2.3rem;
+    animation-name: moveInRight;
+  }
+  &--secondary {
+    font-size: 2rem;
+    font-weight: 30rem;
+    letter-spacing: 1.9rem;
+    animation-name: moveInLeft;
+    margin-bottom: 12vh;
+  }
 }
 
-.header-text--secondary {
-  display: block;
-  font-size: 2rem;
-  font-weight: 30rem;
-  letter-spacing: 1.9rem;
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  margin-bottom: 12vh;
+.heading-primary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color-primary, $color-secondary);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-shadow, 0.3);
+  }
 }

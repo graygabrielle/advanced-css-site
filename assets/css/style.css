@@ -44,26 +44,43 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
+  color: #000; }
+
+[class^="header-text"] {
+  display: block;
+  animation-duration: 2s;
+  animation-timing-function: ease;
   color: #fff; }
 
 .header-text--main {
-  display: block;
   font-size: 5rem;
   font-weight: 400;
   letter-spacing: 2.3rem;
-  animation-name: moveInRight;
-  animation-duration: 2s;
-  animation-timing-function: ease; }
+  animation-name: moveInRight; }
 
 .header-text--secondary {
-  display: block;
   font-size: 2rem;
   font-weight: 30rem;
   letter-spacing: 1.9rem;
   animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease;
   margin-bottom: 12vh; }
+
+.heading-primary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #003dd7, #8b7bda);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s; }
+  .heading-primary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.u-center-text {
+  text-align: center; }
 
 .btn:after {
   content: "";
@@ -133,7 +150,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -142,9 +158,7 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orangered;
-    float: left;
-    height: 4rem; }
+    float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
@@ -159,3 +173,8 @@ body {
     width: calc( ((100% - 3 * 6rem) / 4) * 2 + 6rem); }
   .row .col-3-of-4 {
     width: calc( ((100% - 3 * 6rem) / 4) * 3 + 2 * 6rem); }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
