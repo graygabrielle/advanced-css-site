@@ -1,0 +1,27 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-light;
+}
+
+.header-text--main {
+  display: block;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 2.3rem;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+.header-text--secondary {
+  display: block;
+  font-size: 2rem;
+  font-weight: 30rem;
+  letter-spacing: 1.9rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  margin-bottom: 12vh;
+}

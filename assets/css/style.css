@@ -9,46 +9,61 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #fff;
   padding: 3rem;
   box-sizing: border-box; }
 
-.header {
-  height: 90vh;
-  position: relative;
-  background-image: linear-gradient(to right bottom, rgba(0, 61, 215, 0.7), rgba(139, 123, 218, 0.7)), url("../img/P1251209.JPG");
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    text-align: center;
-    white-space: nowrap;
-    backface-visibility: hidden; }
-  .header__text--main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 2.3rem;
-    animation-name: moveInRight;
-    animation-duration: 2s;
-    animation-timing-function: ease; }
-  .header__text--secondary {
-    display: block;
-    font-size: 2rem;
-    font-weight: 30rem;
-    letter-spacing: 1.9rem;
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    margin-bottom: 12vh; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  /* 80%{
+        transform: translateX(1rem);
+    } */
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  /* 80%{
+        transform: translateX(-1rem);
+    } */
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fff; }
+
+.header-text--main {
+  display: block;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 2.3rem;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease; }
+
+.header-text--secondary {
+  display: block;
+  font-size: 2rem;
+  font-weight: 30rem;
+  letter-spacing: 1.9rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  margin-bottom: 12vh; }
 
 .btn:after {
   content: "";
@@ -96,30 +111,19 @@ body {
   animation: fadeIn 2s 2s;
   animation-fill-mode: backwards; }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  /* 80%{
-        transform: translateX(1rem);
-    } */
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  /* 80%{
-        transform: translateX(-1rem);
-    } */
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
+.header {
+  height: 90vh;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(0, 61, 215, 0.7), rgba(139, 123, 218, 0.7)), url("../img/P1251209.JPG");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    backface-visibility: hidden; }
