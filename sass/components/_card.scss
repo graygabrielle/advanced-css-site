@@ -3,12 +3,12 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 47rem;
   width: 85%;
   margin: 0 auto;
 
   &__side {
-    height: 45rem;
+    height: 47rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -136,7 +136,7 @@
   }
 
   &__details {
-    margin: auto 0;
+    padding: 1.75rem;
     ul {
       list-style: none;
       width: 80%;
