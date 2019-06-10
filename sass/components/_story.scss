@@ -1,0 +1,36 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-shadow, 0.1);
+  background-color: $color-light;
+  border-radius: 3px;
+  padding: 7rem;
+  padding-left: 9rem;
+  font-size: $default-font;
+  transform: skewX(-12deg);
+
+  // & > * {
+  //   transform: skewX((12deg));
+  // } this doesn't work now because you can only have one transform property working on each element, and the "shape" already has a transform on it, so move this into its transform
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(
+      50% at 50% 50%
+    ); //this only works if the element has a height, width, and is floated. it defines how the content flows around the element
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%); //this shapes the element itself
+    transform: translateX(-3rem) skewX((12deg));
+  }
+
+  &__image {
+    height: 100%;
+  }
+
+  &__text {
+    transform: skewX((12deg));
+  }
+}
