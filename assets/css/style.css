@@ -143,6 +143,10 @@ body {
     content: "";
     background-color: rgba(255, 255, 255, 0.15); }
 
+.btn--color {
+  background-image: linear-gradient(to right, #003dd7, #8b7bda);
+  color: #fff !important; }
+
 .btn--fade-in {
   animation: fadeIn 2s 2s;
   animation-fill-mode: backwards; }
@@ -312,7 +316,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 7rem;
   padding-left: 9rem;
@@ -326,11 +330,48 @@ body {
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem) skewX(12deg); }
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative; }
   .story__image {
-    height: 100%; }
+    height: 100%;
+    transform: translateX(-3.5rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s ease;
+    filter: brightness(120%); }
   .story__text {
     transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    top: 50%; }
+  .story:hover .story__image {
+    transform: translateX(-3.5rem) scale(1);
+    filter: blur(3px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 90vh;
@@ -395,9 +436,10 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding-top: 25rem;
+  padding-bottom: 10rem;
   margin-top: -15rem; }
 
 .section-stories {
-  padding: 15rem 0;
-  background-color: #f7f7f7; }
+  padding: 10rem 0;
+  position: relative; }
