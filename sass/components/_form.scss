@@ -46,4 +46,14 @@
     visibility: hidden; //cannot animate this property
     transform: translateY(-4rem);
   }
+
+  &__radio-group {
+    width: 49%;
+    display: inline-block;
+  }
+
+  &__radio-label {
+    font-size: $default-font;
+    cursor: pointer;
+  }
 }
