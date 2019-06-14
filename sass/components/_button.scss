@@ -12,6 +12,7 @@
     transition: all 1s;
   }
 
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -24,6 +25,10 @@
     font-size: $default-font;
     letter-spacing: 0.2rem;
     position: relative;
+
+    //changes needed for styling <buttons> instead of just <a> tags
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -36,10 +41,12 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-shadow, 0.4);
     color: $color-primary;
+    outline: none;
   }
 
   &--white {
