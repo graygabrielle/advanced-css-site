@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Advanced CSS</title>
     <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
     />
@@ -15,6 +20,14 @@
 
   <body>
     <header class="header">
+      <div class="header__logo-box">
+        <img
+          src="assets/img/logo-white.png"
+          alt="Logo white"
+          class="header__logo"
+        />
+        <h5 class="header__logo-text">Wandertours</h5>
+      </div>
       <div class="header__text-box">
         <span class="header-text--main">get outdoors</span>
         <span class="header-text--secondary">find your inspiration</span>
@@ -38,7 +51,8 @@
             <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
               voluptatibus dignissimos adipisci porro corrupti quae nobis
-              expedita accusantium soluta!
+              expedita accusantium soluta! Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Officiis, deleniti!
             </p>
             <h3 class="heading-secondary u-margin-bottom-sm">
               Experience adventure like never before
@@ -46,7 +60,8 @@
             <p class="paragraph">
               Dolor sit amet consectetur adipisicing elit. Ad voluptatibus
               dignissimos adipisci. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit.
+              adipisicing elit. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Minus, est?
             </p>
             <a href="#" class="btn-text">Learn more &rarr;</a>
           </div>
@@ -369,6 +384,41 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img
+          src="assets/img/logo-white.png"
+          alt="Full logo"
+          class="footer__logo"
+        />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+                <a href="#" class="footer__link">Contact us</a>
+                <a href="#" class="footer__link">Careers</a>
+                <a href="#" class="footer__link">Privacy policy</a>
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by
+            <a href="#" class="footer__link">Gray Atkinson-Adams</a> under the
+            instruction of Jonas Schmedtmann. An exercise in SASS and advanced
+            CSS techniques. Copyright &copy; by Jonas Schmedtmann. You are
+            allowed to use this webpage for both personal and commercial use,
+            but NOT to claim it as your own design. A credit to the original
+            author, Jonas Schmedtmann, is of course highly appreciated!
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">
