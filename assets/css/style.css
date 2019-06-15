@@ -89,6 +89,23 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.header__logo-text,
+.footer__logo-text {
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+.footer__copyright {
+  color: #f7f7f7; }
+
+.my-name {
+  color: #8b7bda;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 0 0.5rem; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -460,6 +477,29 @@ body {
 .form__radio-input:checked + .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 5rem;
+  font-size: 1.4rem; }
+  .footer__logo {
+    width: 10rem; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 2.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #8b7bda;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.3); }
+
 .header {
   height: 95vh;
   position: relative;
@@ -476,11 +516,6 @@ body {
     text-align: center; }
   .header__logo {
     width: 8rem; }
-  .header__logo-text {
-    color: #fff;
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 1.5rem; }
   .header__text-box {
     position: absolute;
     top: 50%;
