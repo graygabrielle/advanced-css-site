@@ -7,7 +7,11 @@
     width: 10rem;
   }
 
-  &__navigation {
+  &__navigation,
+  &__copyright {
+    border-top: 1px solid $color-grey-dark-1;
+    padding-top: 2rem;
+    display: inline-block;
   }
 
   &__list {
@@ -38,5 +42,10 @@
       box-shadow: 0 1rem 2rem rgba($color-shadow, 0.4);
       transform: rotate(5deg) scale(1.3);
     }
+  }
+
+  &__copyright {
+    float: right;
+    width: 90%;
   }
 }
